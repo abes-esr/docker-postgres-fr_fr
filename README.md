@@ -1,5 +1,8 @@
 # docker-postgres-fr_fr
 
+
+[![Docker Pulls](https://img.shields.io/docker/pulls/abesesr/postgres-fr_fr.svg)](https://hub.docker.com/r/abesesr/postgres-fr_fr/) [![build-test-pubtodockerhub](https://github.com/abes-esr/docker-postgres-fr_fr/actions/workflows/build-test-pubtodockerhub.yml/badge.svg)](https://github.com/abes-esr/docker-postgres-fr_fr/actions/workflows/build-test-pubtodockerhub.yml)
+
 Images docker pour un postgresql embarquant la locale Française.
 
 Cf préconisation de l'image docker officielle de postgresql :  
