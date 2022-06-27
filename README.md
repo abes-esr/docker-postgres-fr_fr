@@ -1,4 +1,4 @@
-# docker-postgres-fr_FR
+# docker-postgres-fr_fr
 
 Images docker pour un postgresql embarquant la locale Française.
 
