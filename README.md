@@ -1,17 +1,10 @@
-# docker-postgres-fr_fr
+# prada-postgres
 
+Ce dépôt contient les sources de l'image docker abesesr/prada-postgres:8.2.23
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/abesesr/postgres-fr_fr.svg)](https://hub.docker.com/r/abesesr/postgres-fr_fr/) [![build-test-pubtodockerhub](https://github.com/abes-esr/docker-postgres-fr_fr/actions/workflows/build-test-pubtodockerhub.yml/badge.svg)](https://github.com/abes-esr/docker-postgres-fr_fr/actions/workflows/build-test-pubtodockerhub.yml)
+Cette image embarque postgresql en version 8.2.23 (cette version n'est pas disponible dans les images officile sur dockerhub probablement car elle est trop vielle).
 
-Images docker 🐳 pour un postgresql embarquant la locale Française.
+La version officielle la plus vielle disponible sur dockerhub est la version 8.4.22
 
-Cf préconisation de l'image docker officielle de postgresql :  
-https://github.com/docker-library/docs/blob/master/postgres/README.md#locale-customization
-
-## Générer une version
-
-Cette image suit le cycle de développement de postgres ce qui signifie que pour générer une nouvelle version de cette image il faut :
-- vérifier qu'une nouvelle version de postgres est disponible cf https://github.com/docker-library/docs/blob/master/postgres/README.md#supported-tags-and-respective-dockerfile-links  
-  par exemple, la version ``14.3``
-- modifier le numéro de version dans le Dockerfile [``FROM postgres:14.3``](https://github.com/abes-esr/docker-postgres-fr_FR/blob/main/Dockerfile#L1)
-- lancer la github action [``create-release.yml``](https://github.com/abes-esr/docker-postgres-fr_FR/actions/workflows/create-release.yml) et indiquer ``14.3.0`` comme numéro de release (incrémenter le dernier chiffre ``0`` si jamais des nouvelles versions indépendantes de la version de postgres sont à générer)
+Pourquoi cette image ?  
+Car l'application Prada a besoin de cette base de données dans cette version bien précise car le code source (également très vieux) en est dépendant. 
