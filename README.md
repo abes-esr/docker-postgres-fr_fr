@@ -2,7 +2,7 @@
 
 Ce dépôt contient les sources de l'image docker abesesr/postgres:8.2.23
 
-Cette image embarque postgresql en version 8.2.23 (cette version n'est pas disponible dans les images officile sur dockerhub probablement car elle est trop vielle).
+Cette image embarque postgresql en version 8.2.23 (cette version n'est pas disponible dans les images officielles sur dockerhub probablement car elle est trop vielle).
 
 La version officielle la plus vielle disponible sur dockerhub est la version 8.4.22
 
