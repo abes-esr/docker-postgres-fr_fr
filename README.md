@@ -9,11 +9,9 @@ Pour la récupérer :
 docker pull abesesr/postgres-fr_fr:8.2.23
 ```
 
-Cette image embarque postgresql en version ``8.2.23``
+Cette image embarque postgresql en version ``8.2.23`` mais elle n'est n'est pas disponible dans les [images officielles de postgresql sur dockerhub](https://hub.docker.com/_/postgres) probablement car elle est trop vielle, d'où ce présent dépôt/image.
 
-A noter que cette version n'est pas disponible dans les [images officielles de postgresql sur dockerhub](https://hub.docker.com/_/postgres) probablement car elle est trop vielle.
-
-La version officielle la plus vielle disponible sur le [dockerhub officiel de postgresql](https://hub.docker.com/_/postgres) est la version ``8.4.22``
+A noter : la version officielle la plus vielle disponible sur le [dockerhub officiel de postgresql](https://hub.docker.com/_/postgres) est la version ``8.4.22``
 
 ## Pourquoi cette image si vielle ?
 
