@@ -84,7 +84,10 @@ RUN set -ex; \
 ENV PG_MAJOR 8.2
 ENV PATH $PATH:/usr/lib/postgresql/$PG_MAJOR/bin
 
-ENV PG_VERSION 8.2.23-9.pgdg100+1
+# En cas de version non trouvée, pour obtenir les version disponibles la commande suivante est utile : apt-cache madison postgresql-8.2
+# elle retournera quelque chose comme ceci :
+# postgresql-8.2 | 8.2.23-11.pgdg100+1 | http://apt.postgresql.org/pub/repos/apt buster-pgdg/main Sources
+ENV PG_VERSION 8.2.23-11.pgdg100+1
 
 RUN set -ex; \
 	\
