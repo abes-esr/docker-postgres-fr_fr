@@ -52,8 +52,11 @@ RUN set -eux; \
 		! grep -q '/usr/share/locale' /etc/dpkg/dpkg.cfg.d/docker; \
 	fi; \
 	apt-get update; apt-get install -y --no-install-recommends locales; rm -rf /var/lib/apt/lists/*; \
-	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-ENV LANG en_US.utf8
+# config de postgresql pour être en Français:
+# cf https://github.com/docker-library/docs/blob/master/postgres/README.md#locale-customization
+	localedef -i fr_FR -c -f UTF-8 -A /usr/share/locale/locale.alias fr_FR.UTF-8
+ENV LANG fr_FR.utf8
+
 
 RUN set -eux; \
 	apt-get update; \
