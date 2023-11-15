@@ -2,7 +2,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/abesesr/postgres-fr_fr.svg)](https://hub.docker.com/r/abesesr/postgres-fr_fr/)
 
-Ce dépôt contient les sources de l'image docker ``abesesr/postgres-fr_fr:8.2.23``
+Ce dépôt contient les sources de l'image docker ``abesesr/postgres-fr_fr:8.2.23``  
 Pour la récupérer :
 
 ```shell
