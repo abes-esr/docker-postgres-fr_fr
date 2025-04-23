@@ -1,4 +1,4 @@
-FROM postgres:15.4
+FROM postgres:17.4
 
 # config de postgresql pour être en Français:
 # cf https://github.com/docker-library/docs/blob/master/postgres/README.md#locale-customization
